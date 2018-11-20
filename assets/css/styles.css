@@ -1,0 +1,29 @@
+.flex-container {
+    min-height: 400px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .flex-container:after {
+    display: block;
+    content: " invisible node ";
+    flex: 999 999 auto;
+  }
+  .flex-item {
+    flex: 0 0 auto;
+    margin: 5px;
+  }
+  .card-deck .card {
+    max-width: calc(25%);
+    margin:0;
+}
+h1, h2, h3, h4 {
+    font-family: 'Spicy Rice', cursive;
+}
+h5, p {
+    font-family: 'NTR', sans-serif;
+}
