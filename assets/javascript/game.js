@@ -31,18 +31,12 @@ $(document).ready(function () {
             //======================================================
             if (currentGuessCounter === goalNumber) {
                 winCount++;
-
-                function delay() {
-                    alert("YOU WON!! Math must be your favorite subject!");
-                }
+                $('#success').modal('show')
+                
                 reset();
-                setTimeout(delay, 300);
             } else if (currentGuessCounter > goalNumber) {
                 lossCount++;
-                function delay() {
-                    alert("You lost :( You should Study a little more");
-                }
-                setTimeout(delay, 300);
+                $('#failure').modal('show')
                 reset();
             }
         });

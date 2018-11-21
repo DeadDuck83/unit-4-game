@@ -27,3 +27,44 @@ h1, h2, h3, h4 {
 h5, p {
     font-family: 'NTR', sans-serif;
 }
+.kitten-img {
+  vertical-align: middle;
+  border-style: none;
+  margin: 0 25% 0 -25%;
+  width: 150%;
+}
+button {
+  border: none;
+  text-decoration: none;
+  padding: 15px 25px;
+  color: #ffffff;
+  border-radius: 50px;
+  background-color: #e67e22;
+  display: block;
+  position: relative;
+  box-shadow: 0 8px #bf6516;
+  margin:0 auto;
+  font-family:'Spicy Rice', cursive;
+}
+
+button:hover {
+  color: #ffffff;
+  box-shadow: 0 6px #bf6516;
+  top: 2px;
+}
+button:active {
+  box-shadow: 0 0px #bf6516;
+  top: 8px;
+}
+button:focus {
+  outline: 0;
+}
+.modal-content img {
+  max-width: 500px;
+  /* height: 500px; */
+  margin: 0 auto;
+}
+.modal-content {
+  background-color:transparent;
+  border:none;
+}
