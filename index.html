@@ -18,28 +18,32 @@
 
 <body>
     <section id="head-container">
+            <img class="logo-img" src="assets/images/kitten-kounter.jpg" alt="">
         <div class="container">
-            <div class="row">Logo for Kitten Kounter</div>
-            <div class="row">
-                <p class="lead">Which combo of cute kitten pics will get you the perfect view ratio?</p>
+               
+            <div class="row"></div>
+            <div class="row text-center">
+                <p class="lead m-auto pb-4">Which combo of cute kitten pics will get you the perfect view ratio?</p>
                 <p>Click a kitten to see their current view count. Each kitten has a different count associated with their cuteness.
                     Use those numbers to match the perfect cuteness meter number.</p>
-                <p>Oh, did I mention, they are randomly picked numbers?</p>
+                <p class="text-center m-auto">Oh, did I mention, they are randomly picked numbers?</p>
             </div>
         </div>
     </section>
     <section id="game-container">
         <div class="container">
-            <div class="row">
-                <div class="col">
+            <div class="row text-center">
+                <div class="col counter counter-pink">
+                    <h4>Your Current Guess is:</h4>
                     <h2 id="currentNumber">00</h2>
                 </div>
-                <div class="col">
+                <div class="col counter counter-green">
                     <div id="guessMe">
+                        <h4>The Number to get to is:</h4>
                         <h1 id="numberToGuess">55</h1>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col counter counter-blue">
                     <h3>Wins:
                         <span id="winCount"></span>
                     </h3>
@@ -68,32 +72,37 @@
             </div>
         </div>
 
-        </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <footer>
+        <div class="container"></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
 
 
 
     <!-- Success Modal HTML -->
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" id="success">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <img src="assets/images/Cat-Messages.png" alt="Success">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <img src="assets/images/Cat-Messages.png" alt="Success">
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Fail Modal HTML -->
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" id="failure">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <img src="assets/images/Cat-Messages2.png" alt="Failure">
-          </div>
+            <div class="modal-content">
+                <img src="assets/images/Cat-Messages2.png" alt="Failure">
+            </div>
         </div>
-      </div>
+    </div>
 
 
 
