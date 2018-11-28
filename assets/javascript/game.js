@@ -33,7 +33,6 @@ $(document).ready(function () {
     function startGame() {
         //set up variables
 
-        console.log(kittenNames);
         var currentGuessCounter = 0;
         var goalNumber = Math.floor(Math.random() * 100) + 20;
         var winCount = 0;
@@ -95,12 +94,17 @@ $(document).ready(function () {
                 $('#kitten' + (i + 1)).attr('data-number', init);
 
                 // Set random pictures for kittens on the HTML via array
-                // var setKittenName = (Math.floor(Math.random() * 16) + 1);
-                // console.log("kitten names:" + setKittenName);
-                // kittenNames[i] = kittenNames[setKittenName];
+                var setKittenImage = (Math.floor(Math.random() * kittenImages.length));
+                console.log("kitten images:" + setKittenImage);
+                $("#kittenImg"+i).attr("src", kittenImages[setKittenImage]);
+                console.log(kittenImages[i]);
 
 
                 // Set random kitten names for kittens on HTML via array
+                var setKittenName = (Math.floor(Math.random() * kittenNames.length));
+                console.log("kitten images:" + setKittenName);
+                $("#kitten"+(1+i)).text(kittenNames[setKittenName]);
+                console.log(kittenNames[i]);
 
             } else {
                 i--;
