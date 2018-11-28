@@ -2,9 +2,38 @@
 $(document).ready(function () {
     // All code goes in here 
     //======================================================
-
+    var kittenImages = [
+        "assets/images/bo-jangles.png",
+        "assets/images/blue-cartoon-kitty.png",
+        "assets/images/flufferton.png",
+        "assets/images/garfield.png",
+        "assets/images/grumpy-stuff.png",
+        "assets/images/meowly-cyrus.png",
+        "assets/images/mr-meowgi.png",
+        "assets/images/robo-kitty-purple.png",
+        "assets/images/robo-kitty-red.png",
+        "assets/images/stuffy-kitty.png"];
+    var kittenNames = [
+        "Bo Jangles",
+        "Mr Meowgi",
+        "Flufferton",
+        "Meowly Cyrus",
+        "Just Kittin",
+        "Puddy Tat",
+        "Wigglebutt",
+        "Bigglesworth",
+        "Diablo",
+        "Muffin",
+        "ROBO-kitty",
+        "Sammy",
+        "Lucifurr",
+        "Cat Damon",
+        "Tom Paw-ry",
+        "Bubble-O-Seven"];
     function startGame() {
         //set up variables
+
+        console.log(kittenNames);
         var currentGuessCounter = 0;
         var goalNumber = Math.floor(Math.random() * 100) + 20;
         var winCount = 0;
@@ -32,7 +61,7 @@ $(document).ready(function () {
             if (currentGuessCounter === goalNumber) {
                 winCount++;
                 $('#success').modal('show')
-                
+
                 reset();
             } else if (currentGuessCounter > goalNumber) {
                 lossCount++;
@@ -64,6 +93,15 @@ $(document).ready(function () {
                 kittenValues.push(init);
                 // Push the data numbers into the buttons for later use
                 $('#kitten' + (i + 1)).attr('data-number', init);
+
+                // Set random pictures for kittens on the HTML via array
+                // var setKittenName = (Math.floor(Math.random() * 16) + 1);
+                // console.log("kitten names:" + setKittenName);
+                // kittenNames[i] = kittenNames[setKittenName];
+
+
+                // Set random kitten names for kittens on HTML via array
+
             } else {
                 i--;
             }
